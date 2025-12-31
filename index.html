@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KYX | Curated Sneakers</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>KYX</h1>
+    <p>Curated Sneakers. Premium Reseller.</p>
+</header>
+
 <section class="products">
 
 <!-- Nike Products -->
@@ -71,6 +86,20 @@
     <button onclick="addToCart('Nike Air Force 1', 160, document.getElementById('size-nike5').value)">Add to Cart</button>
 </div>
 
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1606813902787-61c38a1a2f27" alt="Nike Air Zoom Pegasus">
+    <h3>Nike Air Zoom Pegasus</h3>
+    <p class="brand">Nike</p>
+    <p class="price">$150</p>
+    <label for="size-nike6">Size:</label>
+    <select id="size-nike6">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('Nike Air Zoom Pegasus', 150, document.getElementById('size-nike6').value)">Add to Cart</button>
+</div>
+
 <!-- Adidas Products -->
 <div class="product-card">
     <img src="https://images.unsplash.com/photo-1597045566677-8cf032ed6634" alt="Adidas Yeezy Boost 350">
@@ -142,6 +171,20 @@
     <button onclick="addToCart('Adidas Gazelle', 140, document.getElementById('size-adidas5').value)">Add to Cart</button>
 </div>
 
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1606813902787-61c38a1a2f27" alt="Adidas ZX 2K Boost">
+    <h3>Adidas ZX 2K Boost</h3>
+    <p class="brand">Adidas</p>
+    <p class="price">$180</p>
+    <label for="size-adidas6">Size:</label>
+    <select id="size-adidas6">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('Adidas ZX 2K Boost', 180, document.getElementById('size-adidas6').value)">Add to Cart</button>
+</div>
+
 <!-- New Balance Products -->
 <div class="product-card">
     <img src="https://images.unsplash.com/photo-1618334558971-2b0b7f0bfc1f" alt="New Balance 574">
@@ -158,35 +201,35 @@
 </div>
 
 <div class="product-card">
-    <img src="https://images.unsplash.com/photo-1606813902787-61c38a1a2f27" alt="New Balance 990v5">
-    <h3>New Balance 990v5</h3>
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="New Balance 327">
+    <h3>New Balance 327</h3>
     <p class="brand">New Balance</p>
-    <p class="price">$185</p>
+    <p class="price">$150</p>
     <label for="size-nb2">Size:</label>
     <select id="size-nb2">
         <option value="7">7</option><option value="8">8</option>
         <option value="9">9</option><option value="10">10</option>
         <option value="11">11</option><option value="12">12</option>
     </select>
-    <button onclick="addToCart('New Balance 990v5', 185, document.getElementById('size-nb2').value)">Add to Cart</button>
+    <button onclick="addToCart('New Balance 327', 150, document.getElementById('size-nb2').value)">Add to Cart</button>
 </div>
 
 <div class="product-card">
-    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="New Balance 327">
-    <h3>New Balance 327</h3>
+    <img src="https://images.unsplash.com/photo-1618334558971-2b0b7f0bfc1f" alt="New Balance 990v5">
+    <h3>New Balance 990v5</h3>
     <p class="brand">New Balance</p>
-    <p class="price">$150</p>
+    <p class="price">$185</p>
     <label for="size-nb3">Size:</label>
     <select id="size-nb3">
         <option value="7">7</option><option value="8">8</option>
         <option value="9">9</option><option value="10">10</option>
         <option value="11">11</option><option value="12">12</option>
     </select>
-    <button onclick="addToCart('New Balance 327', 150, document.getElementById('size-nb3').value)">Add to Cart</button>
+    <button onclick="addToCart('New Balance 990v5', 185, document.getElementById('size-nb3').value)">Add to Cart</button>
 </div>
 
 <div class="product-card">
-    <img src="https://images.unsplash.com/photo-1618334558971-2b0b7f0bfc1f" alt="New Balance 990v4">
+    <img src="https://images.unsplash.com/photo-1606813902787-61c38a1a2f27" alt="New Balance 990v4">
     <h3>New Balance 990v4</h3>
     <p class="brand">New Balance</p>
     <p class="price">$175</p>
@@ -200,7 +243,7 @@
 </div>
 
 <div class="product-card">
-    <img src="https://images.unsplash.com/photo-1606813902787-61c38a1a2f27" alt="New Balance 530">
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="New Balance 530">
     <h3>New Balance 530</h3>
     <p class="brand">New Balance</p>
     <p class="price">$145</p>
@@ -213,6 +256,19 @@
     <button onclick="addToCart('New Balance 530', 145, document.getElementById('size-nb5').value)">Add to Cart</button>
 </div>
 
-<!-- Add 5 more products by repeating the same pattern to reach 20 -->
-
 </section>
+
+<section class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+    <button onclick="checkout()">Checkout</button>
+</section>
+
+<footer>
+    <p>© 2025 KYX. All rights reserved. Reseller of authentic sneakers.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
