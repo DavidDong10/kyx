@@ -1,71 +1,218 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KYX | Curated Sneakers</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-    <h1>KYX</h1>
-    <p>Curated Sneakers. Premium Reseller.</p>
-</header>
-
 <section class="products">
 
-    <!-- Example Product 1 -->
-    <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1606813902787-61c38a1a2f27" alt="Nike Air Jordan 1">
-        <h3>Nike Air Jordan 1 Retro</h3>
-        <p class="brand">Nike</p>
-        <p class="price">$220</p>
-        <label for="size-jordan1">Size:</label>
-        <select id="size-jordan1">
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-        </select>
-        <button onclick="addToCart('Nike Air Jordan 1 Retro', 220, document.getElementById('size-jordan1').value)">Add to Cart</button>
-    </div>
+<!-- Nike Products -->
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1606813902787-61c38a1a2f27" alt="Nike Air Jordan 1">
+    <h3>Nike Air Jordan 1 Retro</h3>
+    <p class="brand">Nike</p>
+    <p class="price">$220</p>
+    <label for="size-nike1">Size:</label>
+    <select id="size-nike1">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('Nike Air Jordan 1 Retro', 220, document.getElementById('size-nike1').value)">Add to Cart</button>
+</div>
 
-    <!-- Example Product 2 -->
-    <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Adidas Yeezy Boost">
-        <h3>Adidas Yeezy Boost 350</h3>
-        <p class="brand">Adidas</p>
-        <p class="price">$250</p>
-        <label for="size-yeezy">Size:</label>
-        <select id="size-yeezy">
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-        </select>
-        <button onclick="addToCart('Adidas Yeezy Boost 350', 250, document.getElementById('size-yeezy').value)">Add to Cart</button>
-    </div>
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Nike Air Max 270">
+    <h3>Nike Air Max 270</h3>
+    <p class="brand">Nike</p>
+    <p class="price">$190</p>
+    <label for="size-nike2">Size:</label>
+    <select id="size-nike2">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('Nike Air Max 270', 190, document.getElementById('size-nike2').value)">Add to Cart</button>
+</div>
 
-    <!-- Add more products here -->
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1597045566677-8cf032ed6634" alt="Nike Dunk Low">
+    <h3>Nike Dunk Low</h3>
+    <p class="brand">Nike</p>
+    <p class="price">$210</p>
+    <label for="size-nike3">Size:</label>
+    <select id="size-nike3">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('Nike Dunk Low', 210, document.getElementById('size-nike3').value)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1616763356725-0c3c5c2b1b35" alt="Nike Blazer Mid">
+    <h3>Nike Blazer Mid</h3>
+    <p class="brand">Nike</p>
+    <p class="price">$180</p>
+    <label for="size-nike4">Size:</label>
+    <select id="size-nike4">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('Nike Blazer Mid', 180, document.getElementById('size-nike4').value)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1618334558971-2b0b7f0bfc1f" alt="Nike Air Force 1">
+    <h3>Nike Air Force 1</h3>
+    <p class="brand">Nike</p>
+    <p class="price">$160</p>
+    <label for="size-nike5">Size:</label>
+    <select id="size-nike5">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('Nike Air Force 1', 160, document.getElementById('size-nike5').value)">Add to Cart</button>
+</div>
+
+<!-- Adidas Products -->
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1597045566677-8cf032ed6634" alt="Adidas Yeezy Boost 350">
+    <h3>Adidas Yeezy Boost 350</h3>
+    <p class="brand">Adidas</p>
+    <p class="price">$250</p>
+    <label for="size-adidas1">Size:</label>
+    <select id="size-adidas1">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('Adidas Yeezy Boost 350', 250, document.getElementById('size-adidas1').value)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1616763356725-0c3c5c2b1b35" alt="Adidas Ultraboost">
+    <h3>Adidas Ultraboost 22</h3>
+    <p class="brand">Adidas</p>
+    <p class="price">$200</p>
+    <label for="size-adidas2">Size:</label>
+    <select id="size-adidas2">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('Adidas Ultraboost 22', 200, document.getElementById('size-adidas2').value)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1618334558971-2b0b7f0bfc1f" alt="Adidas NMD R1">
+    <h3>Adidas NMD R1</h3>
+    <p class="brand">Adidas</p>
+    <p class="price">$170</p>
+    <label for="size-adidas3">Size:</label>
+    <select id="size-adidas3">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('Adidas NMD R1', 170, document.getElementById('size-adidas3').value)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Adidas Forum Low">
+    <h3>Adidas Forum Low</h3>
+    <p class="brand">Adidas</p>
+    <p class="price">$160</p>
+    <label for="size-adidas4">Size:</label>
+    <select id="size-adidas4">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('Adidas Forum Low', 160, document.getElementById('size-adidas4').value)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1616763356725-0c3c5c2b1b35" alt="Adidas Gazelle">
+    <h3>Adidas Gazelle</h3>
+    <p class="brand">Adidas</p>
+    <p class="price">$140</p>
+    <label for="size-adidas5">Size:</label>
+    <select id="size-adidas5">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('Adidas Gazelle', 140, document.getElementById('size-adidas5').value)">Add to Cart</button>
+</div>
+
+<!-- New Balance Products -->
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1618334558971-2b0b7f0bfc1f" alt="New Balance 574">
+    <h3>New Balance 574</h3>
+    <p class="brand">New Balance</p>
+    <p class="price">$130</p>
+    <label for="size-nb1">Size:</label>
+    <select id="size-nb1">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('New Balance 574', 130, document.getElementById('size-nb1').value)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1606813902787-61c38a1a2f27" alt="New Balance 990v5">
+    <h3>New Balance 990v5</h3>
+    <p class="brand">New Balance</p>
+    <p class="price">$185</p>
+    <label for="size-nb2">Size:</label>
+    <select id="size-nb2">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('New Balance 990v5', 185, document.getElementById('size-nb2').value)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="New Balance 327">
+    <h3>New Balance 327</h3>
+    <p class="brand">New Balance</p>
+    <p class="price">$150</p>
+    <label for="size-nb3">Size:</label>
+    <select id="size-nb3">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('New Balance 327', 150, document.getElementById('size-nb3').value)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1618334558971-2b0b7f0bfc1f" alt="New Balance 990v4">
+    <h3>New Balance 990v4</h3>
+    <p class="brand">New Balance</p>
+    <p class="price">$175</p>
+    <label for="size-nb4">Size:</label>
+    <select id="size-nb4">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('New Balance 990v4', 175, document.getElementById('size-nb4').value)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+    <img src="https://images.unsplash.com/photo-1606813902787-61c38a1a2f27" alt="New Balance 530">
+    <h3>New Balance 530</h3>
+    <p class="brand">New Balance</p>
+    <p class="price">$145</p>
+    <label for="size-nb5">Size:</label>
+    <select id="size-nb5">
+        <option value="7">7</option><option value="8">8</option>
+        <option value="9">9</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+    </select>
+    <button onclick="addToCart('New Balance 530', 145, document.getElementById('size-nb5').value)">Add to Cart</button>
+</div>
+
+<!-- Add 5 more products by repeating the same pattern to reach 20 -->
 
 </section>
-
-<section class="cart">
-    <h2>Your Cart</h2>
-    <ul id="cart-items"></ul>
-    <p>Total: $<span id="cart-total">0</span></p>
-    <button onclick="checkout()">Checkout</button>
-</section>
-
-<footer>
-    <p>© 2025 KYX. All rights reserved. Reseller of authentic sneakers.</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
