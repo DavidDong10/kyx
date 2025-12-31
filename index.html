@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KYX | Premium Sneakers</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KYX | Curated Sneakers</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <h1>KYX</h1>
-    <p>Premium Sneakers. Elevated Style.</p>
+    <p>Curated Sneakers. Premium Reseller.</p>
 </header>
 
 <section class="products">
 
+    <!-- Example Product 1 -->
     <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1606813902787-61c38a1a2f27" alt="KYX Shadow">
-        <h3>KYX Shadow</h3>
-        <p>$180</p>
-        <label for="size-shadow">Size:</label>
-        <select id="size-shadow">
+        <img src="https://images.unsplash.com/photo-1606813902787-61c38a1a2f27" alt="Nike Air Jordan 1">
+        <h3>Nike Air Jordan 1 Retro</h3>
+        <p class="brand">Nike</p>
+        <p class="price">$220</p>
+        <label for="size-jordan1">Size:</label>
+        <select id="size-jordan1">
             <option value="7">7</option>
             <option value="8">8</option>
             <option value="9">9</option>
@@ -28,15 +30,17 @@
             <option value="11">11</option>
             <option value="12">12</option>
         </select>
-        <button onclick="addToCart('KYX Shadow', 180, document.getElementById('size-shadow').value)">Add to Cart</button>
+        <button onclick="addToCart('Nike Air Jordan 1 Retro', 220, document.getElementById('size-jordan1').value)">Add to Cart</button>
     </div>
 
+    <!-- Example Product 2 -->
     <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="KYX Eclipse">
-        <h3>KYX Eclipse</h3>
-        <p>$210</p>
-        <label for="size-eclipse">Size:</label>
-        <select id="size-eclipse">
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Adidas Yeezy Boost">
+        <h3>Adidas Yeezy Boost 350</h3>
+        <p class="brand">Adidas</p>
+        <p class="price">$250</p>
+        <label for="size-yeezy">Size:</label>
+        <select id="size-yeezy">
             <option value="7">7</option>
             <option value="8">8</option>
             <option value="9">9</option>
@@ -44,24 +48,10 @@
             <option value="11">11</option>
             <option value="12">12</option>
         </select>
-        <button onclick="addToCart('KYX Eclipse', 210, document.getElementById('size-eclipse').value)">Add to Cart</button>
+        <button onclick="addToCart('Adidas Yeezy Boost 350', 250, document.getElementById('size-yeezy').value)">Add to Cart</button>
     </div>
 
-    <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1597045566677-8cf032ed6634" alt="KYX Phantom">
-        <h3>KYX Phantom</h3>
-        <p>$240</p>
-        <label for="size-phantom">Size:</label>
-        <select id="size-phantom">
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-        </select>
-        <button onclick="addToCart('KYX Phantom', 240, document.getElementById('size-phantom').value)">Add to Cart</button>
-    </div>
+    <!-- Add more products here -->
 
 </section>
 
@@ -73,7 +63,7 @@
 </section>
 
 <footer>
-    <p>© 2025 KYX. All rights reserved.</p>
+    <p>© 2025 KYX. All rights reserved. Reseller of authentic sneakers.</p>
 </footer>
 
 <script src="script.js"></script>
