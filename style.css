@@ -26,11 +26,6 @@ header p {
     margin-top: 10px;
 }
 
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-}
-
 .products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -61,8 +56,15 @@ header p {
 }
 
 .product-card p {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #ccc;
+}
+
+.product-card select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
 }
 
 .product-card button {
@@ -75,6 +77,25 @@ header p {
 
 .product-card button:hover {
     opacity: 0.9;
+}
+
+.cart {
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+.cart ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.cart button {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 footer {
