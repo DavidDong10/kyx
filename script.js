@@ -1,25 +1,9 @@
-// Placeholder Stripe links for testing
 const stripeLinks = {
     "Nike Air Jordan 1 Retro": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "Nike Air Max 270": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "Nike Dunk Low": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "Nike Blazer Mid": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "Nike Air Force 1": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "Nike Air Zoom Pegasus": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
     "Adidas Yeezy Boost 350": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "Adidas Ultraboost 22": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "Adidas NMD R1": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "Adidas Forum Low": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "Adidas Gazelle": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "Adidas ZX 2K Boost": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
     "New Balance 574": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "New Balance 990v5": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "New Balance 327": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "New Balance 990v4": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "New Balance 530": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "Nike React Infinity": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "Adidas Superstar": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
-    "New Balance 1500": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"}
+    "Nike Air Max 270": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"},
+    "Adidas Ultraboost 22": {"7":"https://stripe.com/pay","8":"https://stripe.com/pay","9":"https://stripe.com/pay","10":"https://stripe.com/pay","11":"https://stripe.com/pay","12":"https://stripe.com/pay"}
 };
 
 let cart = [];
@@ -64,11 +48,7 @@ function checkout() {
         const product = item.product;
         const size = item.size;
         const link = stripeLinks[product][size];
-        if (link) {
-            window.open(link, "_blank");
-        } else {
-            alert(`Stripe link not found for ${product} size ${size}`);
-        }
+        if (link) window.open(link, "_blank");
     });
 
     cart = [];
