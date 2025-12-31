@@ -13,32 +13,63 @@
     <p>Premium Sneakers. Elevated Style.</p>
 </header>
 
-<section class="hero">
-    <h2>Move Different.</h2>
-    <p>Luxury streetwear sneakers built for the future.</p>
-</section>
-
 <section class="products">
+
     <div class="product-card">
         <img src="https://images.unsplash.com/photo-1606813902787-61c38a1a2f27" alt="KYX Shadow">
         <h3>KYX Shadow</h3>
         <p>$180</p>
-        <button onclick="checkout('KYX Shadow', 180)">Buy Now</button>
+        <label for="size-shadow">Size:</label>
+        <select id="size-shadow">
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <button onclick="addToCart('KYX Shadow', 180, document.getElementById('size-shadow').value)">Add to Cart</button>
     </div>
 
     <div class="product-card">
         <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="KYX Eclipse">
         <h3>KYX Eclipse</h3>
         <p>$210</p>
-        <button onclick="checkout('KYX Eclipse', 210)">Buy Now</button>
+        <label for="size-eclipse">Size:</label>
+        <select id="size-eclipse">
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <button onclick="addToCart('KYX Eclipse', 210, document.getElementById('size-eclipse').value)">Add to Cart</button>
     </div>
 
     <div class="product-card">
         <img src="https://images.unsplash.com/photo-1597045566677-8cf032ed6634" alt="KYX Phantom">
         <h3>KYX Phantom</h3>
         <p>$240</p>
-        <button onclick="checkout('KYX Phantom', 240)">Buy Now</button>
+        <label for="size-phantom">Size:</label>
+        <select id="size-phantom">
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <button onclick="addToCart('KYX Phantom', 240, document.getElementById('size-phantom').value)">Add to Cart</button>
     </div>
+
+</section>
+
+<section class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+    <button onclick="checkout()">Checkout</button>
 </section>
 
 <footer>
